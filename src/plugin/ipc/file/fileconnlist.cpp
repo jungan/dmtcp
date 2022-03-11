@@ -384,6 +384,11 @@ FileConnList::prepareShmList()
           strstr(area.name, "dmtcpSharedArea") != NULL ||
           strstr(area.name, "synchronization-log") != NULL ||
           strstr(area.name, "infiniband") != NULL ||
+          strstr(area.name, "xpmem") != NULL ||
+          strstr(area.name, "hugetlbfs") != NULL ||
+          strstr(area.name, "/dev/kgni") != NULL ||
+          strstr(area.name, "/dev/xpmem") != NULL ||
+          strstr(area.name, "/dev/shm") != NULL ||
           strstr(area.name, "synchronization-read-log") != NULL) {
         continue;
       }
